@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    
+    <style>
+        @font-face {
+            font-family: myFont;
+            src: url('Milky Matcha.otf');
+        
+        }
+
+        
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 82vh;
+            width: 102vw;
+            
+        }
+
+
+        body {
+            font-family: myFont;
+            color: black;
+
+            background-image: url('clariFIYJournalCover.png'), url('laceBorder.jpg');
+            background-position: center, center;
+            background-size: contain, cover;
+            background-attachment: fixed, fixed;
+            background-repeat: no-repeat, no-repeat;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .button {
+            border: 10px solid;
+            color: rgb(161, 46, 65);
+            text-align: center;
+            display: block;
+
+            font-size: 10px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            font-family: myFont;
+
+            height: 60px;
+            width: 120px;
+            border-radius: 10px;
+            
+
+        }
+
+
+        .button:hover {
+            background-color: white;
+            color: rgb(127, 17, 17);
+            border: 15px solid pink;
+            text-align:center;
+        }
+
+        img {
+            width: 40vw;
+            position: absolute;
+            position: fixed;
+            bottom: 1vh;
+            left: 1vw;
+            padding-left: 10px;
+        }
+
+    </style>
+
+    <!-- Webpage title (in tab) -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ClariFIY</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <button id="journal-btn" class="button button1">Open Journal</button>
+        </div>
+        <img src="bruiser.png" alt="Bruiser says click 'Open Journal!'">
+        
+        <script src="script.js"></script>
+    </body>
+</html>
